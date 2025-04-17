@@ -38,8 +38,10 @@ install.packages(c("shiny", "readr", "readxl", "gtsummary", "ggplot2",
                    "dplyr", "DT", "tools", "gt", "moments"))
 ```
 ### How to run this in R/Rstudio
+
 ```r
-shiny::runApp()
+# setwd() to where the app.R saved and run 
+shiny::runApp("app.R")
 
 # To open in the browser
 shinyApp(ui, server, options = list(launch.browser = TRUE))
