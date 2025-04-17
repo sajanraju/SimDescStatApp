@@ -1,3 +1,7 @@
+## Download the app from my google drive
+[Download from here](https://drive.google.com/drive/folders/1-Ep-MWFt-rW1eLF61Myce7HUWm6Rmrup?usp=drive_link)
+
+
 ## 🙋 How to Use
 
 1. Upload your data file.
