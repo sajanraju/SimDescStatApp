@@ -62,4 +62,9 @@ shiny::runApp("app.R")
 shinyApp(ui, server, options = list(launch.browser = TRUE))
 
 ```
+**Upload file**
+
+
+<img src="https://github.com/sajanraju/SimDescStatApp/blob/main/Images/upload_file.png?raw=true" width="400"/>
+
 
