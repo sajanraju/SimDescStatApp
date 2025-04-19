@@ -13,10 +13,25 @@ This is a Shiny web application for performing **descriptive statistics and visu
 - 📥 Download summary stats as **CSV** and formatted tables as **HTML**
 
 ## How to use it
-1. use the standalone application (required Node.js and NPM installation) OR
+1. Create and use the standalone application from the script (required Node.js and NPM installation) OR Download from the google drive.
 2. Use the shiny app in R/Rstudio
 
-## 📦 Requirements to run in R/Rstudio
+## 1. How to create the standalone App
+
+ **Run the setup in R or RStudio**  
+ - Download the contents of **app** folder
+ - set the working dir /path/downloaded/folder/app in R
+   
+   ```r
+   source("create_app.R")
+   ```
+   - Open terminal and launch the bash script
+   <pre> ./launch.sh  </pre>
+   
+   App will run in the new window or in the browser.
+
+
+## 2. 📦 Requirements to run in R/Rstudio
 
 This app uses the following R packages:
 
