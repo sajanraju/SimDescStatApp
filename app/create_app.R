@@ -1,7 +1,7 @@
 
 
 create_standalone_shiny_app <- function(app_source_path = "app") {
-  dir_name <- "simdesc_app"
+  dir_name <- "SimDesc_app"
   dir.create(dir_name, showWarnings = FALSE)
   
   # Paths
@@ -69,14 +69,19 @@ start electron\\node_modules\\.bin\\electron .',
   
   writeLines(
     '#!/bin/bash
+# Kill any process on port 8080
 kill -9 $(lsof -t -i:8080)
+
+# Run the shiny app
 Rscript -e "shiny::runApp(\'app/app.R\', port=8080, launch.browser=FALSE)" &
+
+# Wait a bit before launching Electron
 sleep 3
 npx electron main.js',
     file.path(dir_name, "launch.sh")
   )
   Sys.chmod(file.path(dir_name, "launch.sh"), mode = "0755")  
-  message("✅ Standalone Shiny app scaffold created in: ", normalizePath(dir_name))
+  message("✅ Standalone Shiny app created in: ", normalizePath(dir_name))
 }
 
 
