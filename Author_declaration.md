@@ -17,3 +17,7 @@ It does not store or transmit any uploaded data.
 Users are responsible for ensuring data privacy and regulatory compliance.
 
 This tool provides a preliminary overview of your dataset to help guide further analysis.
+
+## 🧪 Platform Compatibility
+🖥️ This application has been **tested only on macOS**.
+Functionality on Windows or Linux is not guaranteed and may require additional setup or tweaks.
